@@ -144,3 +144,9 @@ img {
         background: #efebce;
     }
     
+.nav-link.active {
+        /* font-weight: bold; */
+        background-color: #bb8588; /* Background color on hover */
+        color: white; /* Text color on hover */
+        border-radius: 10px; /* Round button */
+    }
