@@ -1,0 +1,139 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: "Roboto", sans-serif;
+  }
+  
+main {
+    flex-grow: 1;
+    margin-bottom: 0; /* Ensures no extra gap */
+    padding-bottom: 0; /* Removes padding if present */
+  }
+
+.homepage,
+.homepage * {
+    box-sizing: border-box;
+}
+
+.homepage {
+    background: #a3a380;
+    min-height: 100vh;
+    position: relative;
+    overflow:hidden;
+    width:100%; 
+    padding-bottom: 40px; 
+}
+
+.text-section {
+    padding: 20px;
+    align-items:start;
+}
+
+h1 {
+    font-size: 2rem; /* Responsive heading */
+    font-family: "Roboto serif", sans-serif;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    font-family: "Roboto serif", sans-serif;
+}
+
+.img {
+border-radius: 30px;
+height: 230px;
+position: relative;
+object-fit: cover;
+}
+   
+.footer {
+    background: #efebce;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Adjust size as needed */
+    height: 40px;
+    padding: 5px; /* Adjust padding as needed */
+}
+
+.footer h5 {
+    font-size: 1.2rem;
+    color: #000000;
+}
+
+.footer .d-flex {
+    align-items: center;  /* Vertically align social icons */
+}
+
+.footer .instagram,
+.footer .whatsapp,
+.footer .facebook {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.footer .instagram:hover,
+.footer .whatsapp:hover,
+.footer .facebook:hover {
+    transform: scale(1.1); /* Add a slight hover effect */
+}
+
+.navbar .nav-link {
+    color: black; /* Default text color */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+    margin-right: 10px;
+    margin-top:auto;
+}
+
+.navbar-nav .nav-link:not(:last-child) {
+    margin-right: 18px; /* Adjust the value as needed */
+}
+
+.navbar .nav-link:hover {
+    color: #BB8588; 
+}
+
+.navbar .nav-link.disabled {
+    cursor: not-allowed; /* Disable hover effect for disabled link */
+}
+
+.navbar-custom {
+    background: #efebce;
+}
+
+/* .nav-link.active {
+    background-color: #bb8588; 
+    color: white; 
+    border-radius: 10px; 
+} */
+
+.cta-button {
+    background-color: #bb8588; /* Primary color */
+    color: white;
+    padding: 7px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: semi-bold;
+    transition: background-color 0.3s ease;
+    border: 2px solid #bb8588;
+}
+
+.cta-button:hover {
+    background-color: #A3A380; /* Darker shade for hover effect */
+    border-color: white;
+}
+
+.icon-space {
+    margin-right: 8px; 
+    vertical-align: middle;
+  }
+  

@@ -1,0 +1,271 @@
+
+html{
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: "Roboto", sans-serif;
+  }
+  
+main {
+    flex-grow: 1;
+  }
+
+.homepage,
+.homepage * {
+    box-sizing: border-box;
+}
+
+.homepage {
+    background: #a3a380;
+    min-height: 100vh;
+    position: relative;
+    overflow:hidden;
+    width:100%; 
+    padding-bottom: 40px; 
+}
+
+.hero-image-container {
+    position: relative;
+    height: 80vh;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.hero-title {
+    position: absolute;
+    left: 50px;
+    bottom: 0;
+    color: #ffffff;
+    font-family: "Exo 2", sans-serif;
+    font-size: 48px;
+    padding-bottom: 150px;
+}
+
+.hero-subtitle {
+    position: absolute;
+    font-size: 1.5rem;
+    color: #ffffff;
+    left: 50px;
+    bottom: 0;
+    font-family: "Exo 2", sans-serif;
+    padding-bottom: 120px;
+}
+
+.hero-cta-button {
+    color: white;
+    border: 2px solid white;
+    /* padding: 12px 24px;  */
+    font-size: 18px; 
+    position: absolute;
+    left: 50px;
+    bottom: 0;
+    margin-bottom: 30px;
+}
+
+.hero-cta-button-end {
+    color: white;
+    border: 2px solid white;
+    font-size: 18px; 
+    position: relative;
+    left: 40px;
+    bottom: 0;
+    top: 10px;
+}
+
+.home-subtitle {
+    color: #fffafa;
+    font-family: "Roboto serif", sans-serif;
+    font-size: 0.5rem;
+    padding:50px 20px 10px 80px;
+    position: relative;
+}
+
+.home-text {
+    color: #ffffff;
+    font-family: "Roboto serif", sans-serif;
+    font-size: 1.2rem;
+    padding:0px 30px 10px 50px;
+    position: relative;
+    margin-top: 40px; 
+    text-align: left;
+}
+
+.home-text-items {
+    color: #293832;
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 36px;
+    }
+    .home-text {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 24px;
+        left: 20px;
+    }
+    .home-text {
+        font-size: 0.9rem;
+        padding:0px 20px 10px 20px;
+    }
+}
+
+@media (min-width: 480px) {
+    .footer{
+        padding:50px 0px 10px 80px;
+    }
+}
+
+
+.footer {
+    background: #efebce;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Adjust size as needed */
+    height: 40px;
+    padding: 5px; /* Adjust padding as needed */
+}
+
+
+.footer h5 {
+    font-size: 1.2rem;
+    color: #000000;
+}
+
+.footer .d-flex {
+    align-items: center;  /* Vertically align social icons */
+}
+
+.footer .instagram,
+.footer .whatsapp,
+.footer .facebook {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.footer .instagram:hover,
+.footer .whatsapp:hover,
+.footer .facebook:hover {
+    transform: scale(1.1); /* Add a slight hover effect */
+}
+
+.navbar .nav-link {
+    color: black; /* Default text color */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+    margin-right: 10px;
+    margin-top:auto;
+}
+
+.navbar-nav .nav-link:not(:last-child) {
+    margin-right: 18px; /* Adjust the value as needed */
+}
+
+.navbar .nav-link:hover {
+    color: #BB8588; 
+}
+
+.navbar .nav-link.disabled {
+    cursor: not-allowed; /* Disable hover effect for disabled link */
+}
+
+.navbar-custom {
+    background: #efebce;
+}
+
+/* .nav-link.active {
+    background-color: #bb8588; 
+    color: white; 
+    border-radius: 10px;
+} */
+
+.cta-button {
+    background-color: #bb8588; /* Primary color */
+    color: white;
+    padding: 7px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: semi-bold;
+    transition: background-color 0.3s ease;
+    border: 2px solid #bb8588;
+}
+
+.cta-button:hover {
+    background-color: #A3A380; /* Darker shade for hover effect */
+    border-color: white;
+}
+
+
+.col-md-4 {
+    margin-bottom: 20px; /* Add some space between columns */
+}
+
+.fa-heart {
+    color: #e74c3c; /* Red */
+}
+
+.fa-star {
+    color: #f1c40f; /* Yellow */
+}
+
+.fa-cog {
+    color: #3498db; /* Blue */
+}
+
+.col-md-4 img {
+    width: 100px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+    border-radius: 50%; /* Creates a circular image */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+
+.text-h4 {
+    color: #293832; 
+    font-size: 20px; 
+    font-family: "Roboto serif", sans-serif;
+    padding-top: 20px;
+}
+
+.col-lg-6 img {
+    width: 800px;
+    height: 600px;
+    border-radius: 10%;
+    object-fit: cover;
+    padding-left:8%;
+    padding-right:8%;
+    padding-top:8%;
+    padding-bottom:8%;
+}
+
+.bg-earth {
+    background-color: #7a5c3c;
+  }
+
+.card-text {
+    color: #293832; 
+  }
+
+
+  
