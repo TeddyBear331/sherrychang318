@@ -116,13 +116,24 @@ main {
     .hero-title {
         font-size: 24px;
         left: 20px;
+        padding-bottom: 120px;
+    }
+    .hero-subtitle {
+        left: 20px;
+        font-size: 18px;
+        padding-bottom: 90px;
+    }
+    .hero-cta-button {
+        left: 20px;
     }
     .home-text {
         font-size: 0.9rem;
         padding:0px 20px 10px 20px;
     }
+    .hero-cta-button-end {
+        left: 20px;
+    }
 }
-
 @media (min-width: 480px) {
     .footer{
         padding:50px 0px 10px 80px;
@@ -198,6 +209,8 @@ main {
     color: white; 
     border-radius: 10px;
 } */
+
+
 
 .cta-button {
     background-color: #bb8588; /* Primary color */
